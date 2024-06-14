@@ -1,11 +1,14 @@
 package com.example.lab8_20210751.Controller;
 
 import com.example.lab8_20210751.Dao.MovieDao;
+import com.example.lab8_20210751.Entity.Movie;
 import com.example.lab8_20210751.Entity.MovieWEB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -33,5 +36,11 @@ public class Controller {
         }
 
     }
+
+    @PostMapping({"/guardarMovie"})
+    public Object guardarMovie(@RequestBody MovieWEB movieWEB){
+
+    }
+
 
 }
