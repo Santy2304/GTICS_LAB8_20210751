@@ -36,6 +36,12 @@ public class Controller {
 
     @GetMapping({"/buscarMovie/{movie}"})
     public Object buscarMovie(@PathVariable("movie") String title){
+        HashMap<String, Object> responseJson = new HashMap<>();
+        List<MovieWEB> listasMovies = movieDao.listarActiveMovies();
+
+        for (MovieWEB movieWEB : listasMovies){
+            if(movieWEB.getResul)
+        }
 
     }
 
